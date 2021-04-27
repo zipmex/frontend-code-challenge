@@ -8,7 +8,7 @@ Assuming you are new joiner and you are assigned to continue working on this tas
 ## Before working on challenge
 - Please git checkout to a new branch
 - After finished the challenge, use git cmd
-  - `git format-patch main -o patches`, Then zip patches folder to interviewer email.
+  - `git format-patch your-branch -o patches`, Then zip patches folder to interviewer email.
 ---
 
 ## What our dev have done
