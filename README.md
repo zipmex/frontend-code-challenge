@@ -1,6 +1,6 @@
  # Zipmex frontend code challenge
 
-Our frontend dev was working on order form and order book features but our dev is on vocation.
+Our frontend dev was working on order form and order book features but our dev is on vacation.
 
 Assuming you are new joiner and you are assigned to continue working on this task.
 
