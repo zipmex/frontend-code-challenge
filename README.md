@@ -1,32 +1,53 @@
- # Zipmex frontend code challenge
+# Zipmex frontend code challenge
 
 Our frontend dev was working on order form and order book features but our dev is on vacation.
 
 Assuming you are new joiner and you are assigned to continue working on this task.
 
 ---
+
 ## Before working on challenge
+
 - Please git checkout to a new branch
 - After finished the challenge, use git cmd
   - `git format-patch your-branch -o patches`, Then zip patches folder to interviewer email.
+
 ---
 
 ## What our dev have done
+
 - Simple order book UI to show orders
 - Simple order form UI that can add order buy or sell with price and amount to orderbook
 
 ## What we expect
-- Improve order form to submit order with decimal places
-- Beautify Order book and order form
-  - Any design are welcome
-  - You can use any lib to style
-- Some unit tests
-  - Eg. utility function or UI that have condition
-- Improve codebase
-  - Show us what you got !
-
----
-## Orderbook example
 
 ![Order book](./orderbook.png)
 
+1. Sort orders by price from high to low
+2. Calculate the volume for each price
+3. If users place order with the same price, merge those orders together. For example:
+
+   1. Buy price = 10, amount = 5
+   2. Buy price = 10, amount = 4
+
+      Order book should show single entry with:
+      Price = 10, amount = 9
+
+4. Show volume bar
+5. Show market price
+6. Improve order form to submit order with decimal places and add form validations:
+   - Price should be greater than 0
+   - Amount should be greater than 0
+7. Some unit tests
+   - e.g. utility function or UI that have condition
+
+**Bonus challenge:**
+
+8. Display a depth chart of current order book
+9. Beautify Order book and order form
+
+   - Any design are welcome
+   - You can use any lib to style
+
+10. Improve codebase
+    - Show us what you got !
