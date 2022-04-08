@@ -23,9 +23,9 @@ Assuming you are new joiner and you are assigned to continue working on this tas
 
 ![Order book](./orderbook.png)
 
-1. Sort orders by price from high to low
-2. Calculate the volume for each price
-3. If users place order with the same price, merge those orders together. For example:
+1. Orders in order book should be sorted by price, from high to low
+2. Order book should show volume for each price
+3. If users place order with the same price, those orders should be merged together. For example:
 
    1. Buy price = 10, amount = 5
    2. Buy price = 10, amount = 4
@@ -33,12 +33,12 @@ Assuming you are new joiner and you are assigned to continue working on this tas
       Order book should show single entry with:
       Price = 10, amount = 9
 
-4. Show volume bar
-5. Show market price
-6. Improve order form to submit order with decimal places and add form validations:
+4. Volume bar should be added. It shows relative order size for each price
+5. Market price should be shown
+6. Order form should allow user to submit order with decimal places with following validations:
    - Price should be greater than 0
    - Amount should be greater than 0
-7. Some unit tests
+7. Some unit tests should be added
    - e.g. utility function or UI that have condition
 
 **Bonus challenge:**
