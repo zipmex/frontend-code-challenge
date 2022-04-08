@@ -33,9 +33,9 @@ Assuming you are new joiner and you are assigned to continue working on this tas
       Order book should show single entry with:
       Price = 10, amount = 9
 
-4. Volume bar should be added. It shows relative order size for each price
-5. Market price should be shown
-6. Order form should allow user to submit order with decimal places with following validations:
+4. Volume bar, showing order size relative to other orders in order book.
+5. Market price
+6. Allow user to submit order with decimal places with following validations:
    - Price should be greater than 0
    - Amount should be greater than 0
 7. Some unit tests should be added
@@ -43,7 +43,7 @@ Assuming you are new joiner and you are assigned to continue working on this tas
 
 **Bonus challenge:**
 
-8. Display a depth chart of current order book
+8. Depth chart implementation. What is market depth? See [here](https://en.wikipedia.org/wiki/Market_depth)
 9. Beautify Order book and order form
 
    - Any design are welcome
